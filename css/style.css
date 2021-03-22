@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color:#010202 ;
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+a {
+    text-decoration: none;
+}
+.header {
+    width: 90%;
+    margin: auto;
+    max-width: 1146px;
+    padding:56px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: block;
+}
+.user-foto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.user-name {
+    color: #fff;
+    margin-right: 15px;
+}
+.app {
+    /* background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url(../img/cover-image.jpg) no-repeat top right; */
+    background: linear-gradient(90deg, #010202 0%, #010202 45%, rgba(1, 2, 2, 0.2) 90%);
+    min-height: 100vh;
+    color: white;
+}
+.film {
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding: 7% 0;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    opacity: 0.4;
+    color: #E5E5E5;
+    font-size: 16px;
+    line-height: 140%;
+    flex-wrap: wrap;
+}
+.tags > * {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.age {
+    padding: 1px 5px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.description {
+    width: 460px;
+    font-size: 21px;
+line-height: 140%;
+margin-bottom: 36px;
+}
+.button {
+    padding: 11px 26px; 
+    border-radius: 6px;
+    border: none; 
+    font-size: 16px;
+    line-height: 140%;
+    background: #2F2F2F;
+    color: white;
+    cursor: pointer;
+}
+.button-primary {
+    background: #EA6E20;
+    margin-right: 15px;
+}
+.button-text {
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+
+@media (max-width: 1200px){
+     .app {
+        background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url(../img/cover-image.jpg) no-repeat transparent right;
+        background-size: 50%;
+        margin-top: 20px;      
+    }
+    video {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .app{
+    background-position: bottom center;
+    height: auto;
+    padding-bottom: 400px;
+    }
+    .film {
+        padding-top: 2%;
+    }
+
+    .description {
+        font-size: 16px;
+        max-width: 330px;
+        width: auto;
+    }
+    .film-logo {
+        max-width: 100%;
+    }
+
+}
+@media (max-width: 575px){
+    .app {
+        padding-bottom: 350px;
+        background-size: 300px;
+    }
+    .user-name {
+        display: none;
+    }
+    .button-text {
+        display: none;
+    }
+    .button {
+        margin-bottom: 10px;       
+    }
+}
